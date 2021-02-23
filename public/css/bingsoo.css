@@ -1,0 +1,208 @@
+/* Screen One Headings */
+h4{
+	text-align: center;
+	padding-top: 5px;
+}
+
+h6 {
+	text-align: center;
+}
+
+
+
+/* Image of Graph Section */
+.today img {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:90%;
+	height:auto;
+}
+
+img{
+  width: 350px;
+}
+
+.today {
+	filter: grayscale(100%);
+}
+
+
+
+/* Current Friends Online Section */
+.onlinefriends {
+	border-bottom: 10px solid white;
+	border-left: 15px solid white;
+	border-right: 15px solid white;
+	border-top: 15px solid white;
+	background-color: #eeeeee;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+
+.onlinefriends .flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 25px;
+}
+
+.onlinefriends .flex-container p {
+	font-size: 20px;
+	margin: auto;
+}
+
+.onlinefriends h3{
+	padding: 0px;
+}
+
+.flex-container-friends {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 83px;
+}
+
+
+
+/*Start a Session Section */
+.info {
+	filter: grayscale(100%);
+}
+
+
+
+/* Screen Two Heading */
+
+h3{
+	text-align: center;
+}
+
+
+
+/* Session Edit Section */
+.session{
+	border: 1px solid lightgray;
+	background-color: lightgray;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+
+/* Participants Section */
+.flex-container-ses {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	filter: grayscale(100%);
+	margin-top: 30px;
+	gap: 25px;
+}
+
+.flex-container-people {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 25px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+
+.flex-container .fas {
+	font-size: 25px;
+}
+
+.flex-container .far {
+	font-size: 25px;
+}
+
+.participants {
+	border-bottom: 10px solid white;
+	border-left: 15px solid white;
+	border-right: 15px solid white;
+	border-top: 15px solid white;
+	background-color: #eeeeee;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+
+
+.participants h3{
+	margin: 10px;
+}
+
+.participants .far {
+	margin: 20px;
+	font-size: 60px;
+}
+
+.time .fas{
+	border: 1px solid lightgray;
+	background-color: lightgray;
+	padding-left: 65px;
+	padding-right: 7px;
+	padding-top: 10px;
+    font-size: 20px;
+}
+
+.participants .flex-container p {
+	font-size: 20px;
+	margin: auto;
+}
+
+.participants .decline  {
+	margin: 20px;
+}
+
+.invite {
+	text-align: center;
+	filter: grayscale(100%);
+}
+
+
+
+/* Session Duration Section */
+.time {
+	border-bottom: 25px solid white;
+	border-left: 15px solid white;
+	border-right: 15px solid white;
+	border-top: 5px solid white;
+	background-color: #eeeeee;
+	padding-bottom: 40px;
+}
+
+.time h3 {
+	margin: 20px;
+}
+
+.duration{
+	padding-top: 3px;
+}
+
+
+
+/* Bottom NavBar For Both Screens */
+.navbar {
+	filter: grayscale(100%);
+}
+
+
+
+/* Other Code */
+.icon-heading {
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+/* Both Buttons */
+.info {
+	text-align: center;
+}
