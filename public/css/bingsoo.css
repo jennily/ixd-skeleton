@@ -48,8 +48,11 @@ img{
 }
 
 .onlinefriends .flex-container p {
+	display: flex;
 	font-size: 20px;
 	margin: auto;
+	justify-content: space-between;
+
 }
 
 .onlinefriends h3{

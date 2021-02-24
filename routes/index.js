@@ -2,7 +2,8 @@
 /*
  * GET home page.
  */
-
+var friends = require('../friends.json');
 exports.view = function(req, res){
-  res.render('index');
+	console.log(friends)
+  	res.render('index', friends);
 };
