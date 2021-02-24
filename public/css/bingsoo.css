@@ -44,7 +44,7 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 25px;
+	gap: 90px;
 }
 
 .onlinefriends .flex-container p {
@@ -52,7 +52,6 @@ img{
 	font-size: 20px;
 	margin: auto;
 	justify-content: space-between;
-
 }
 
 .onlinefriends h3{
@@ -63,7 +62,8 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 83px;
+	padding-left: 7px;
+	gap: 80px;
 }
 
 
