@@ -189,7 +189,6 @@ h3{
 }
 
 
-
 /* Bottom NavBar For Both Screens */
 .navbar {
 	filter: grayscale(100%);
@@ -203,9 +202,17 @@ h3{
 	text-align: center;
 }
 
+.time .flexcontainer {
+	margin: auto;
+}
 
+input {
+	width: 20%;
+	padding: -20px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
 
-/* Both Buttons */
 .info {
 	text-align: center;
 }
