@@ -247,3 +247,54 @@ input {
 	padding: 10px;
 	border-radius: 5px;
 }
+
+
+/* Login Page */
+h1 {
+	text-align: center;
+	padding-top: 100px;
+}
+
+.form-control {
+	margin-left: 60px;
+	max-width: 300px;
+}
+
+label {
+	margin-left: 60px;
+	font-weight: bold;
+}
+
+.form-check-input {
+	margin-left: 0px;
+}
+
+.mb-3 {
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+.sign-info {
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* End Session Early Page */
+img.sessions {
+	max-width: 200px;
+	padding-right: 10px;
+}
+
+.participants p {
+	text-align: center;
+}
+
+
+/* Session History */
+h5 {
+	text-align: center;
+}
+
+.history {
+	margin-top: 20px;
+}
