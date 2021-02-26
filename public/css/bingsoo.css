@@ -9,7 +9,6 @@ h6 {
 }
 
 
-
 /* Image of Graph Section */
 .today img {
 	display: block;
@@ -72,7 +71,6 @@ img{
 }
 
 
-
 /*Start a Session Section */
 /*.info {
 	filter: grayscale(100%);
@@ -93,7 +91,6 @@ h3{
 	padding-left: 30px;
 	padding-right: 30px;
 }
-
 
 
 /* Participants Section */
@@ -164,13 +161,12 @@ h3{
 
 .participants .decline  {
 	margin: 20px;
+	color: red;
 }
 
 .invite {
 	text-align: center;
-	filter: grayscale(100%);
 }
-
 
 
 /* Session Duration Section */
@@ -196,7 +192,6 @@ h3{
 .navbar {
 	filter: grayscale(100%);
 }
-
 
 
 /* Other Code */
