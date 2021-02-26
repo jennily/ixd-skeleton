@@ -12,15 +12,46 @@
         crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="bingsoo.css">
+    <link rel="stylesheet" href="/css/bingsoo.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	
 	<title>Productivity Tracker</title>
 </head>
 <body>
-    <div class='container'>
-    <p>Current Session</p>
+    <div class="head">
+        <div class="flex-container-ses">
+            <!--<a href="bingsoo.html"> -->
+            <a href="/">
+            <i class="fas fa-chevron-left fa-2x"></i>
+            </a>
+            <h3 class=session>Time Left: 00:13:05</h3>
+      </div>
+    </div>
+
+    <div class="participants">
+        <div class="flex-container-people">
+             <i class="far fa-user-circle"></i>
+             <p>You</p>
+             <<img src="/images/bar1.png">
+        </div>
+        <div class="flex-container-people">
+             <i class="far fa-user-circle"></i>
+             <p>Amy</p>
+             <img src="/images/bar1.png">
+        </div>
+        <div class="flex-container-people">
+             <i class="far fa-user-circle"></i>
+             <p>Jake</p>
+             <img src="/images/bar1.png">
+        </div>
+    </div>
+
+    <div class="info">
+    <a href="/session">
+        <a href='/session' button type="button" class="btn btn-primary btn-lg">End Session Early</button>
+    </a>
+    </div>
 
     <nav class="navbar fixed-bottom navbar-light bg-light">
          <div class="container-fluid">
