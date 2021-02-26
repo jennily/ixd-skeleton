@@ -23,10 +23,15 @@ img{
   width: 350px;
 }
 
-.today {
+/*.today {
 	filter: grayscale(100%);
-}
+} */
 
+.btn-primary {
+	background-color: #A9D8FF;
+	color: white;
+	border: none;
+}
 
 
 /* Current Friends Online Section */
@@ -69,10 +74,9 @@ img{
 
 
 /*Start a Session Section */
-.info {
+/*.info {
 	filter: grayscale(100%);
-}
-
+} */
 
 
 /* Screen Two Heading */
@@ -80,7 +84,6 @@ img{
 h3{
 	text-align: center;
 }
-
 
 
 /* Session Edit Section */
@@ -240,6 +243,7 @@ input {
 	margin-left: 12.5%;
 	width: 75%;
 	margin-top: 5%;
+	margin-bottom: 10%;
 }
 
 .popup a {
