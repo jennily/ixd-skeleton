@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -28,9 +29,17 @@
             <i class="fas fa-chevron-left fa-2x"></i>
             </a>
             <h3 class=session>Session 1</h3>
-            <i class="material-icons" style="font-size: 30px">&#xe22b;</i>
+            <a href="#" onclick="on()"><i class="material-icons" style="font-size: 30px">&#xe22b;</i></a>
          </div>
-     </div>
+    </div>
+    <div class="popup" id="overlay">
+            <h4>Edit Session Name</h4>
+            <input type="minute"id="myMinute">
+            <br>
+            <a href="#" onclick="off()">
+            Submit
+            </a>
+    </div>
 
     <div class="participants">
         <h3>Participants</h3>
@@ -52,33 +61,59 @@
     </div>
 
 
-    <div class="time">
+    <!--<div class="time">
         <h3>Session Duration</h3>
         <div class="flex-container">
             <p class="duration">Hours:</p><i class="fas fa-chevron-down"></i>
             <p class="duration">Minutes:</p><i class="fas fa-chevron-down"></i>
         </div>
+    </div> -->
+    <div class="time">
+        <h3>Session Duration</h3>
+        <div class="flex-container">
+            <p class='duration'>Hours:</p><input type="hour"id="myHour" />
+            <p class='duration'>Minutes:</p><input type="minute"id="myMinute" />
+        </div>
     </div>
 
-	<div class="info">
-    <a href="/session">
-		<a href='/session' button type="button" class="btn btn-primary btn-lg">Begin Session</button>
-    </a>
-	</div>
-	
 
+
+    <div class="info">
+    <a href="/session">
+        <a href='/session' button type="button" class="btn btn-primary btn-lg">Begin Session</button>
+    </a>
+    </div>
 
 	<nav class="navbar fixed-bottom navbar-light bg-light">
  		 <div class="container-fluid">
  		 	   <a href="/history"><i class="fas fa-history fa-2x"></i></a>
                 <a href="/"><i class="fas fa-home fa-2x"></i></a>
-                <a href="/invite"><i class="fas fa-user-friends fa-2x"></i></a>
+                <a href="/friendslist"><i class="fas fa-user-friends fa-2x"></i></a>
             </a>
   		</div>
 	</nav>
 
+    <script>
+        /*$ = function(id) {
+            return document.getElementById(id);
+        }
 
+        var show = function(id) {
+             $(id).style.display ='block';
+        }
+        var hide = function(id) {
+            $(id).style.display ='none';
 
+        }*/
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+            }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+            }
+    </script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

@@ -9,7 +9,6 @@ h6 {
 }
 
 
-
 /* Image of Graph Section */
 .today img {
 	display: block;
@@ -23,10 +22,15 @@ img{
   width: 350px;
 }
 
-.today {
+/*.today {
 	filter: grayscale(100%);
-}
+} */
 
+.btn-primary {
+	background-color: #A9D8FF;
+	color: white;
+	border: none;
+}
 
 
 /* Current Friends Online Section */
@@ -67,12 +71,10 @@ img{
 }
 
 
-
 /*Start a Session Section */
-.info {
+/*.info {
 	filter: grayscale(100%);
-}
-
+} */
 
 
 /* Screen Two Heading */
@@ -82,7 +84,6 @@ h3{
 }
 
 
-
 /* Session Edit Section */
 .session{
 	border: 1px solid lightgray;
@@ -90,7 +91,6 @@ h3{
 	padding-left: 30px;
 	padding-right: 30px;
 }
-
 
 
 /* Participants Section */
@@ -161,13 +161,12 @@ h3{
 
 .participants .decline  {
 	margin: 20px;
+	color: red;
 }
 
 .invite {
 	text-align: center;
-	filter: grayscale(100%);
 }
-
 
 
 /* Session Duration Section */
@@ -189,12 +188,10 @@ h3{
 }
 
 
-
 /* Bottom NavBar For Both Screens */
 .navbar {
 	filter: grayscale(100%);
 }
-
 
 
 /* Other Code */
@@ -203,9 +200,50 @@ h3{
 	text-align: center;
 }
 
+.time .flexcontainer {
+	margin: auto;
+}
 
+input {
+	width: 20%;
+	padding: -20px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
 
-/* Both Buttons */
 .info {
 	text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  z-index: 20;
+}
+
+#overlay {
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+
+.popup input {
+	margin-left: 12.5%;
+	width: 75%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.popup a {
+	margin-left: 100px;
+	background-color: #eeeeee;
+	padding: 10px;
+	border-radius: 5px;
 }
