@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="/css/bingsoo.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/functions.js"></script>
 	
 	<title>Productivity Tracker</title>
 </head>
@@ -28,17 +31,18 @@
             <a href="/">
             <i class="fas fa-chevron-left fa-2x"></i>
             </a>
-            <h3 class=session>Session 1</h3>
+            <h3 class=session id=sessiontitle>Session 1</h3>
             <a href="#" onclick="on()"><i class="material-icons" style="font-size: 30px">&#xe22b;</i></a>
          </div>
     </div>
     <div class="popup" id="overlay">
             <h4>Edit Session Name</h4>
-            <input type="minute"id="myMinute">
+            <input type="text"id="sessionname">
             <br>
-            <a href="#" onclick="off()">
+            <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="off()">Submit</a>
+            <!--<a href="#" id=submitbutton onclick="off()">
             Submit
-            </a>
+            </a>-->
     </div>
 
     <div class="participants">
