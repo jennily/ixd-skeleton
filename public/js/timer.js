@@ -20,7 +20,7 @@ function initializePage() {
 
 
 
-document.onload = function() {
+window.onload = function() {
 
 
 }
