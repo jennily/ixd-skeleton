@@ -5,7 +5,8 @@ $(document).ready(function() {
 
 function initializePage() {
 	console.log("Javascript connected!")
-	$('#submitbutton').click(changeText)
+	$('#submitbutton').click(changeText);
+	$('#startbutton').click(checkTime)
 }
 
 
@@ -15,11 +16,29 @@ function changeText(e){
 	var newname =  document.getElementById("sessionname").value
 	console.log(newname);
 	$('#sessiontitle').html(newname);
+
 }
+
+	var timerhour =  document.getElementById("myHour").value
+	var timerminute = document.getElementById("myMinute").value
+	console.log(timerhour);
+	console.log(timerminute);
+	sessionStorage.setItem("timerHour", timerhour);
+	sessionStorage.setItem("timerMinute", timerminute);
 
  /*function callBackFn(result) {
  	console.log(result);
  	$('#project' + result.id + ' .details').html('foo');
 }*/
 
+function checkTime(e){
+	e.preventDefault();
+	var timerhour =  document.getElementById("myHour").value
+	var timerminute = document.getElementById("myMinute").value
+	console.log(timerhour);
+	console.log(timerminute);
+	sessionStorage.setItem("timerHour", timerhour);
+	sessionStorage.setItem("timerMinute", timerminute);
+	window.open("/session", "_self");
 
+}
