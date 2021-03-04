@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="/css/bingsoo.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="/js/login.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  {{> facebook}}
+  <script src="/js/facebook.js"></script>
   
   <title>Productivity Tracker</title>
 </head>
@@ -40,14 +45,20 @@
     
     <div class="info">
     <a href="/homepage">
-        <a href='/homepage' button type="button" class="btn btn-primary btn-lg">Login</button>
+        <a href='/homepage' button type="button" id=loginbutton class="btn btn-primary btn-lg">Login</button>
     </a>
     </div>
        <div class="sign-info">
     <a href="/homepage">
-        <a href='/homepage' button type="button" class="btn btn-primary btn-lg">Sign Up</button>
+        <a href='/homepage' button type="button" id=signupbutton class="btn btn-primary btn-lg">Sign Up</button>
     </a>
     </div>
+
+        <p class="facebookLogin">
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                </fb:login-button>
+            </p>
+        </div>
     
 </body>
 

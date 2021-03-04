@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="/css/bingsoo.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/introHCI.js"></script>
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
 	
 	<title>Productivity Tracker</title>
 </head>
@@ -42,6 +47,15 @@
         <button type="submit" class="btn btn-primary">Login</button>
         <button type="submit" class="btn btn-primary">Sign up</button>
     </div>
+
+    <div class="jumbotron">
+
+    <p class="facebookLogin">
+                Please login through Facebook
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                </fb:login-button>
+            </p>
+        </div>
 
     
     
