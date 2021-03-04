@@ -103,27 +103,28 @@ h3{
 	gap: 25px;
 }
 
-.flex-container-people {
+.participants .flex-container-people {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 25px;
 }
 
-.flex-container {
+.participants .flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 10px;
 }
 
-.flex-container .fas {
-	font-size: 25px;
+ .time .flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
 }
 
-.flex-container .far {
-	font-size:25px;
-}
+
 
 .participants {
 	border-bottom: 10px solid white;
@@ -318,7 +319,8 @@ h5 {
 	font-size: 3em;
 	padding: 10px;
 }
-.h4, h4{
+
+.partic h4{
 	font-size: 1.2em;
 	background-color: lightblue;
 	border-radius: 5px;
@@ -344,4 +346,5 @@ h5 {
 	top: -100px;
 	margin-right: 10px;
 }
+
 
