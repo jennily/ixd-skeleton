@@ -1,0 +1,20 @@
+{
+	"participants": 
+	[
+		{
+			"id": 1,
+			"name": "You",
+			"imageURL":"/images/You.png"
+		},
+		{
+			"id": 2,
+			"name": "Amy",
+			"imageURL":"/images/Amy.png"
+		},
+		{
+			"id": 3,
+			"name": "Jake",
+			"imageURL":"/images/Jake.png"
+		}	
+	]
+}

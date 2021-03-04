@@ -33,7 +33,7 @@
         <img src="/images/Timeline.png">
     </div>
 
-    <div class="onlinefriends">
+    <!--<div class="onlinefriends">
         <h3>Current Friends Online</h3>
         <div class="flex-container-friends">
              <i class="far fa-user-circle fa-3x"></i>
@@ -49,12 +49,29 @@
 			</div>
 		{{/each}}
 		</div>
-        <!--<div class="flex-container">
+        <div class="flex-container">
              <p>Jake</p>
              <p>Amy</p>
              <p>Bob</p>
-        </div>-->
-    </div>
+        </div>
+    </div>-->
+
+        <div class="onlinefriends">
+        <h3>Current Friends Online</h3>
+            <div class="displayfriends">
+                <div class="flex-container-friends">
+            {{#each friends}}   
+                    <img src="{{imageURL}}" />                
+            {{/each}}
+                </div>
+            </div>
+            <div class = "displaynames">       
+                <div class="flex-container">
+            {{#each friends}}
+              <p>{{name}}</p>
+            {{/each}}
+                </div>
+              </div>
 
 
 

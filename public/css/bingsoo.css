@@ -67,7 +67,12 @@ img{
 	flex-direction: row;
 	justify-content: center;
 	padding-left: 7px;
-	gap: 80px;
+	gap: 30px;
+}
+
+.onlinefriends img {
+	width: 100px;
+	height: 100px;
 }
 
 
@@ -94,7 +99,7 @@ h3{
 
 
 /* Participants Section */
- .flex-container-ses {
+ .head .flex-container-ses {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -103,19 +108,28 @@ h3{
 	gap: 25px;
 }
 
-.participants .flex-container-people {
+.displayparticipants .flex-container-participants {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: row;
 	justify-content: center;
 	gap: 25px;
 }
 
-.participants .flex-container {
+.displayparticipants .flex-container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: row;
 	justify-content: center;
-	gap: 10px;
+	gap: 25px;
 }
+
+.participants img {
+	width: 100px;
+	height: 100px;
+}
+
+
 
  .time .flex-container {
 	display: flex;
@@ -347,4 +361,9 @@ h5 {
 	margin-right: 10px;
 }
 
+/* Session */
+.participants .flex-container-people {
+	display: flex;
+	flex-direction: row;
+}
 

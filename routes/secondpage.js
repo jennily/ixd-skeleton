@@ -1,3 +1,7 @@
+
+
+var participants = require('../participants.json');
 exports.view = function(req, res){
-  res.render('secondpage');
+  console.log(participants)
+  	res.render('secondpage', participants);
 };

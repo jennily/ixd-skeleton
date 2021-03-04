@@ -28,7 +28,7 @@
     <div class="head">
         <div class="flex-container-ses">
             <!--<a href="bingsoo.html"> -->
-            <a href="/">
+            <a href="/homepage">
             <i class="fas fa-chevron-left fa-2x"></i>
             </a>
             <h3 class=session id=sessiontitle>Session 1</h3>
@@ -45,7 +45,7 @@
             </a>-->
     </div>
 
-    <div class="participants">
+    <!--<div class="participants">
         <h3>Participants</h3>
         <div class="flex-container-people">
              <i class="far fa-user-circle"></i>
@@ -58,7 +58,29 @@
              <p>Jake</p>
         </div>
         <p class="decline">Mike declined session invite</p>
+        <div class="invite">-->
+
+    <div class="participants">
+        <h3>Participants</h3>
+            <div class="displayparticipants">
+                <div class="flex-container-participants">
+            {{#each participants}}   
+                    <img src="{{imageURL}}" />                
+            {{/each}}
+                </div>
+        <div class="flex-container">
+             <p>You</p>
+             <p>Amy</p>
+             <p>Jake</p>
+        </div>
+    </div>
+
+
+        
+        <p class="decline">Mike declined session invite</p>
         <div class="invite">
+
+
             <a href='/invite' button type="button" class="btn btn-primary btn-lg">Invite More</button>
          </a>
         </div>
