@@ -3,44 +3,84 @@ $(document).ready(function() {
 	initializePage();
 })
 
+
+function initializePage() {
+	console.log("Javascript connected!");
+	/*var timerhour =  document.getElementById("myHour").value
+	var timerminute = document.getElementById("myMinute").value
+	console.log(timerhour);
+	*/
+	var timerhour = sessionStorage.getItem("timerHour");
+	var timerminute = sessionStorage.getItem("timerMinute");
+	console.log(timerhour);
+	console.log(timerminute);
+	$('#hourminute').html("0" + timerhour + ":" + timerminute + ":00");
+	countdownTimer();
+}
+
 window.onload = function () {
 
+var zoom = "Zoom";
+var youtube = "Youtube";
+var discord = "Discord";
+var instagram = "Instagram";
+var gmail = "Gmail";
+
+let applications = ["Zoom", "Youtube", "Discord", "Instagram", "Gmail"];
+
 var chart = new CanvasJS.Chart("chartContainer", {
-	title: {
-		text: "Time Spent on Each App"
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Time Spent on Apps"
 	},
 	axisY: {
-		title: "Seconds",
-		includeZero: true,
-		suffix: " "
+		title: "Seconds"
 	},
-	data: [{
-		type: "column",	
-		yValueFormatString: "#,### ",
+	data: [{        
+		type: "column",  
 		indexLabel: "{y}",
-		dataPoints: [
-			{ label: "Zoom", y: 0 },
-			{ label: "Youtube", y: 0 },
-			{ label: "Instagram", y: 0 },
-			{ label: "TikTok", y: 0 },
+		dataPoints: [      
+			{ y: 0, label: zoom },
+			{ y: 0,  label: youtube },
+			{ y: 0,  label: discord },
+			{ y: 0,  label: instagram },
+			{ y: 0,  label: gmail },
 		]
 	}]
 });
 
+function randomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 function updateChart() {
-	var barColor, deltaY, yVal;
-	var dps = chart.options.data[0].dataPoints;
-	for (var i = 0; i < dps.length; i++) {
-		deltaY = Math.round(2 + Math.random() *(-2-2));
+	var deltaY, yVal;
+	var i = randomInt(5);
+		var dps = chart.options.data[0].dataPoints;
+		deltaY = 1;
 		yVal = deltaY + dps[i].y > 0 ? dps[i].y + deltaY : 0;
-		barColor = yVal ? "#FF2500" : yVal ? "#FF6000" : yVal ? "#6B8E23 " : null;
-		dps[i] = {label: " "+(i+1) , y: yVal, color: barColor};
-	}
+		dps[i] = {label: (applications[i]) , y: yVal};
+	
 	chart.options.data[0].dataPoints = dps; 
 	chart.render();
 };
 updateChart();
 
-setInterval(function() {updateChart()}, 500);
+setInterval(function() {updateChart()}, 1000);
+
+
+
+// function randomInt(max) {
+// 	return Math.floor(Math.random() * Math.floor(max));
+// };
+
+// function updateChart() {
+// 	yVal = chart.options.data[0].dataPoints;
+// 	chart.options.data[0].dataPoints = yVal + 1;
+// 	chart.render()
+// };
+
+// setInterval(function() {updateChart()}, 500);
 
 }
