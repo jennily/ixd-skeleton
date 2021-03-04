@@ -1,0 +1,25 @@
+{
+	"invitefriends": 
+	[
+		{
+			"id": 4,
+			"name": "Mia",
+			"imageURL":"/images/Bob.png",
+			"status": "Invite"
+		},
+		{
+			"id": 5,
+			"name": "Jake",
+			"imageURL":"/images/Jake.png",
+			"status": "Invited"
+		},
+		{
+			"id": 6,
+			"name": "Amy",
+			"imageURL":"/images/Amy.png",
+			"status": "Invited"
+		}
+
+	
+	]
+}

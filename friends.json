@@ -3,15 +3,18 @@
 	[
 		{
 			"id": 1,
-			"name": "Jake"
+			"name": "Jake",
+			"imageURL":"/images/Jake.png"
 		},
 		{
 			"id": 2,
-			"name": "Amy"
+			"name": "Amy",
+			"imageURL":"/images/Amy.png"
 		},
 		{
 			"id": 3,
-			"name": "Bob"
+			"name": "Bob",
+			"imageURL":"/images/Bob.png"
 		}	
 	]
 }

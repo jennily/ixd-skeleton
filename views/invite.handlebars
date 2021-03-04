@@ -1,19 +1,24 @@
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/html" href="bingsoo.html">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="bingsoo.css">
+    <link rel="stylesheet" href="/css/bingsoo.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/inviting.js"></script>
 	
 	<title>Productivity Tracker</title>
 </head>
@@ -22,30 +27,28 @@
     <div class="head">
         <div class="flex-container-ses">
             <!--<a href="bingsoo.html"> -->
-            <a href="/">
+            <a href="/secondpage">
             <i class="fas fa-chevron-left fa-2x"></i>
             </a>
-            <h3 class=session>Current Friends Online</h3>
+            <h3 class=session>Invite Friends</h3>
+        </div>
+        <br>
 
-    <div class="participants">
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Amy</p>
-             
-        </div>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Jake</p>
-        </div>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Paul</p>
-        </div>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Mia</p>
+
+
+    <div class="invitees">    
+            {{#each invitefriends}}
+                <div class="invitefriend" id={{id}}>
+                    <img src="{{imageURL}}" width=50, height=50 />
+                    <p>{{name}}</p>
+                    </a>
+                    <button type="button" class="btn btn-primary btn-lg" id=invitesent>{{status}}</button>
+                </div>
+            {{/each}}
         </div>
     </div>
+
+
 
     <nav class="navbar fixed-bottom navbar-light bg-light">
          <div class="container-fluid">
@@ -54,6 +57,7 @@
                 <a href="/friendslist"><i class="fas fa-user-friends fa-2x"></i></a>
             </a>
         </div>
+
     </nav>
     </div>
 </body>

@@ -1,3 +1,5 @@
+var invitefriends = require('../invitefriends.json');
 exports.view = function(req, res){
-  res.render('invite');
+  console.log(invitefriends)
+  	res.render('invite', invitefriends);
 };

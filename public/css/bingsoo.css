@@ -94,7 +94,7 @@ h3{
 
 
 /* Participants Section */
-.flex-container-ses {
+ .flex-container-ses {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -103,27 +103,28 @@ h3{
 	gap: 25px;
 }
 
-.flex-container-people {
+.participants .flex-container-people {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 25px;
 }
 
-.flex-container {
+.participants .flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 10px;
 }
 
-.flex-container .fas {
-	font-size: 25px;
+ .time .flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
 }
 
-.flex-container .far {
-	font-size: 25px;
-}
+
 
 .participants {
 	border-bottom: 10px solid white;
@@ -297,4 +298,49 @@ h5 {
 
 .history {
 	margin-top: 20px;
+	padding: 20px;
+	background-color: lightgray;
+	border-radius: 5px;
+}
+.iconsHis, .fas .far {
+	font-size: 1.75em;
+	padding: 50px;
+	font-weight: 10;
+	background-color: #99c9a6;
+	margin-left: 10px; 
+	transition: all 200ms ease-out;
+	box-shadow: 0 0 0 1px rgba(0,0,0, .2);
+	}
+
+.iconsHis: hover{
+	background-color: #000;
+}
+.fa-user-circle{
+	font-size: 3em;
+	padding: 10px;
+}
+.h4, h4{
+	font-size: 1.2em;
+	background-color: lightblue;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 55px;
+}
+
+/* invite page */
+.invitees img {
+	width: 100px;
+	height: 100px;
+
+}
+
+.invitees p {
+	margin-left: 10px;
+}
+
+.invitees button{
+	float: right;
+	position: relative;
+	top: -100px;
+	margin-right: 10px;
 }
