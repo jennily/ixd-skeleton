@@ -297,4 +297,31 @@ h5 {
 
 .history {
 	margin-top: 20px;
+	padding: 20px;
+	background-color: lightgray;
+	border-radius: 5px;
+}
+.iconsHis, .fas .far {
+	font-size: 1.75em;
+	padding: 50px;
+	font-weight: 10;
+	background-color: #99c9a6;
+	margin-left: 10px; 
+	transition: all 200ms ease-out;
+	box-shadow: 0 0 0 1px rgba(0,0,0, .2);
+	}
+
+.iconsHis: hover{
+	background-color: #000;
+}
+.fa-user-circle{
+	font-size: 3em;
+	padding: 10px;
+}
+.h4, h4{
+	font-size: 1.2em;
+	background-color: lightblue;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 55px;
 }
