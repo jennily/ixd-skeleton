@@ -103,28 +103,27 @@ h3{
 	gap: 25px;
 }
 
-.participants .flex-container-people {
+.flex-container-people {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 25px;
 }
 
-.participants .flex-container {
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 10px;
 }
 
- .time .flex-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 10px;
+.flex-container .fas {
+	font-size: 25px;
 }
 
-
+.flex-container .far {
+	font-size:25px;
+}
 
 .participants {
 	border-bottom: 10px solid white;
@@ -327,6 +326,7 @@ h5 {
 	margin-top: 55px;
 }
 
+
 /* invite page */
 .invitees img {
 	width: 100px;
@@ -344,3 +344,4 @@ h5 {
 	top: -100px;
 	margin-right: 10px;
 }
+
