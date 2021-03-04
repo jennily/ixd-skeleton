@@ -14,14 +14,13 @@ function initializePage() {
 	var timerminute = sessionStorage.getItem("timerMinute");
 	console.log(timerhour);
 	console.log(timerminute);
-	$('#hourminute').html("0" + timerhour + ":0" + timerminute + ":00");
+	$('#hourminute').html("0" + timerhour + ":" + timerminute + ":00");
 	countdownTimer();
 }
 
 
 
 window.onload = function() {
-
 
 }
 
@@ -43,9 +42,8 @@ window.onload = function() {
 	}, 1000);
 }*/
 
-var interval = null;
-
 function countdownTimer() {
+	var interval = null;
 	var hours = parseInt(sessionStorage.getItem("timerHour"));
 	var minutes = parseInt(sessionStorage.getItem("timerMinute"));
 	var seconds = 0;
@@ -61,7 +59,7 @@ function countdownTimer() {
         displayTime();
         timeinseconds -= 1;
         console.log(timeinseconds);
-        if (timeinseconds <= 0) {
+        if (timeinseconds < 0) {
             clearInterval(interval);
         }
     }, 1000);
