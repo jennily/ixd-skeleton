@@ -30,8 +30,6 @@
             <i class="fas fa-chevron-left fa-2x"></i>
             </a>
             <h3 class=session>Friends List</h3>
-            <a href="#" onclick="on()"><i class="material-icons" style="font-size: 30px">&#xe22b
-            </i></a>
          </div>
     </div>
     <div class="popup" id="overlay">
@@ -43,7 +41,7 @@
             </a>
     </div>
 
-    <div class="participants">
+    <!--<div class="participants">
         <h3>Users</h3>
         <div class="flex-container-people">
              <i class="far fa-user-circle"></i>
@@ -60,6 +58,17 @@
         <div class="flex-container-people">
              <i class="far fa-user-circle"></i>
              <p>Mia</p>
+        </div>
+    </div>-->
+
+    <div class="friends">
+            {{#each friends}}
+                <div class="friendlist" id={{id}}>
+                    <img src="{{imageURL}}" width=50, height=50 />
+                    <p>{{name}}</p>
+                    </a>
+                </div>
+            {{/each}}
         </div>
     </div>
 

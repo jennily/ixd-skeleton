@@ -1,3 +1,5 @@
+var friendslist = require('../friends.json');
 exports.view = function(req, res){
-  res.render('friendslist');
+  console.log(friendslist)
+  	res.render('friendslist', friendslist);
 };

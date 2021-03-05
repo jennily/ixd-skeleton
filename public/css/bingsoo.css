@@ -409,3 +409,8 @@ h5 {
 	flex-direction: row;
 }
 
+/* friends list*/
+.friendlist img {
+	width:100px;
+	height:100px;
+}
