@@ -380,22 +380,22 @@ h5 {
 	background-color: #000;
 }
 
-img[src='/images/Amy.png']{
+.partic img[src='/images/Amy.png']{
 	width: 50px;
 	height: 50px;
 }
 
-img[src='/images/amygraph.png']{
+.partic img[src='/images/amygraph.png']{
 	width: 250px;
 	height: 250px;
 	gap:20px;
 }
 
-img[src='/images/Jake.png']{
+.partic img[src='/images/Jake.png']{
 	width: 50px;
 	height: 50px;
 }
-img[src='/images/jakegraph.png']{
+.partic img[src='/images/jakegraph.png']{
 	margin-top: 10%;
 	width: 250px;
 	height: 250px;
