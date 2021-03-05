@@ -4,17 +4,20 @@
 		{
 			"id": 1,
 			"name": "Jake",
-			"imageURL":"/images/Jake.png"
+			"imageURL":"/images/Jake.png",
+			"graphimage": "/images/jakegraph.png"
 		},
 		{
 			"id": 2,
 			"name": "Amy",
-			"imageURL":"/images/Amy.png"
+			"imageURL":"/images/Amy.png",
+			"graphimage": "/images/amygraph.png"
 		},
 		{
 			"id": 3,
 			"name": "Bob",
-			"imageURL":"/images/Bob.png"
+			"imageURL":"/images/Bob.png",
+			"graphimage": "/images/yougraph.png"
 		}	
 	]
 }

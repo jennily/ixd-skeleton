@@ -32,45 +32,42 @@
             <h3 class=session>Friends List</h3>
          </div>
     </div>
-    <div class="popup" id="overlay">
-            <h4>Search by Username</h4>
-            <input type="minute"id="myMinute">
-            <br>
-            <a href="#" onclick="off()">
-            Enter
-            </a>
-    </div>
 
-    <!--<div class="participants">
-        <h3>Users</h3>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Amy</p>
-        </div>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Jake</p>
-        </div>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Paul</p>
-        </div>
-        <div class="flex-container-people">
-             <i class="far fa-user-circle"></i>
-             <p>Mia</p>
-        </div>
-    </div>-->
-
-    <div class="friends">
+    <!--<div class="friends">
             {{#each friends}}
                 <div class="friendlist" id={{id}}>
-                    <img src="{{imageURL}}" width=50, height=50 />
-                    <p>{{name}}</p>
-                    </a>
+                    <img src="{{imageURL}}" width=50, height=50 /><p>{{name}}</p><button type="button" class="btn btn-primary btn-lg" style= float:right >See Profile</button>
                 </div>
             {{/each}}
         </div>
+    </div>-->
+    <div class="friends">
+            <!--{{#each friends}}
+                <div class="friendlist" id={{id}}>
+                    <img src="{{imageURL}}" width=50, height=50 /><p>{{name}}</p><button type="button" class="btn btn-primary btn-lg" onclick="on()" style= float:right >See Profile</button>
+            {{/each}}
+
+            {{#each friends}}
+                <div class="popup" id="overlay" id={{id}}>
+                <h4>{{name}}'s Profile</h4>
+                <br>
+                <img src='{{graphimage}}'>
+                <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="off()">Close</a>
+            {{/each}}-->
+            {{#each friends}}
+                <div class="friendlist" id={{id}}>
+                    <img src="{{imageURL}}" width=50, height=50 /><p>{{name}}</p><button type="button" class="btn btn-primary btn-lg" onclick="on()" style= float:right >See Profile</button><div class="popup" id="overlay" id={{id}}><h4>{{name}}'s Profile</h4>
+                <br>
+                <p> Current Activity </p>
+                <img src='{{graphimage}}'>
+                <br>
+                <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="off()">Close</a></div>
+            {{/each}}
+
+            
     </div>
+    </div>
+
 
     <nav class="navbar fixed-bottom navbar-light bg-light">
          <div class="container-fluid">
