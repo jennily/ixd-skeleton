@@ -1,14 +1,19 @@
 /* Screen One Headings */
 h4{
 	text-align: center;
-	padding-top: 5px;
+	margin-bottom: 0px;
+	font-family: "Space Mono", monospace;
+	font-size: 20px;
 }
 
 h6 {
 	text-align: center;
+	font-family: Muli, sans-serif;
+	font-size: 15px;
+	margin-top: 5px;
 }
 
-
+/* HOMEPAGE */
 /* Image of Graph Section */
 .today img {
 	display: block;
@@ -19,12 +24,8 @@ h6 {
 }
 
 img{
-  width: 350px;
+  width: 320px;
 }
-
-/*.today {
-	filter: grayscale(100%);
-} */
 
 .btn-primary {
 	background-color: #A9D8FF;
@@ -32,6 +33,9 @@ img{
 	border: none;
 }
 
+.today {
+	margin-top: 100px;
+}
 
 /* Current Friends Online Section */
 .onlinefriends {
@@ -40,7 +44,6 @@ img{
 	border-right: 15px solid white;
 	border-top: 15px solid white;
 	background-color: #eeeeee;
-	padding: 10px;
 	padding-bottom: 15px;
 }
 
@@ -48,7 +51,9 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 90px;
+	margin-bottom: 10px;
+	font-family: Muli, sans-serif;
+	gap: 22px;
 }
 
 .onlinefriends .flex-container p {
@@ -66,20 +71,30 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding-left: 7px;
-	gap: 30px;
+	padding-left: 5px;
+	gap: 65px;
 }
 
 .onlinefriends img {
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 70px;
+}
+
+#profileicon {
+	font-size: 45px;
+	position: relative;
+	top: 5px;
+}
+
+.navbar-light .navbar-brand {
+	font-size: 30px;
+	position: relative;
+	font-family: "Bellota Text";
+	font-weight: bold;
 }
 
 
 /*Start a Session Section */
-/*.info {
-	filter: grayscale(100%);
-} */
 
 
 /* Screen Two Heading */
@@ -95,6 +110,7 @@ h3{
 	background-color: lightgray;
 	padding-left: 30px;
 	padding-right: 30px;
+	font-family: "Space Mono", monospace;
 }
 
 
@@ -105,7 +121,7 @@ h3{
 	justify-content: center;
 	filter: grayscale(100%);
 	margin-top: 30px;
-	gap: 25px;
+	gap: 20px;
 }
 
 .displayparticipants .flex-container-participants {
@@ -121,7 +137,9 @@ h3{
 	flex-direction: row;
 	flex-wrap: row;
 	justify-content: center;
-	gap: 25px;
+	font-family: Muli, sans-serif;
+	padding-left: 5px;
+	gap: 20px;
 }
 
 .participants img {
@@ -200,6 +218,7 @@ h3{
 
 .duration{
 	padding-top: 3px;
+	margin-bottom: 5px;
 }
 
 
@@ -267,7 +286,8 @@ input {
 /* Login Page */
 h1 {
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 140px;
+	font-family: Muli, sans-serif;
 }
 
 .form-control {
@@ -277,11 +297,17 @@ h1 {
 
 label {
 	margin-left: 60px;
-	font-weight: bold;
+	margin-bottom: 0px;
+	font-family: Muli, sans-serif;
+	font-size: 18px;
 }
 
 .form-check-input {
-	margin-left: 0px;
+	margin-left: 5px;
+}
+
+.form-check-label {
+	font-size: 15px;
 }
 
 .mb-3 {
@@ -294,6 +320,12 @@ label {
 	padding-top: 15px;
 }
 
+p.facebooklogin {
+	text-align: center;
+	margin-top: 10px;
+}
+
+
 /* End Session Early Page */
 img.sessions {
 	max-width: 200px;
@@ -302,6 +334,16 @@ img.sessions {
 
 .participants p {
 	text-align: center;
+}
+
+#loginbutton {
+	width: 300px;
+	background-color: #A2D762;
+}
+
+#signupbutton {
+	width: 300px;
+	background-color: #A2D762;
 }
 
 
