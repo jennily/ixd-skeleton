@@ -59,13 +59,36 @@
             {{/each}}-->
             {{#each friends}}
                 <div class="friendlist" id={{id}}>
-                    <img src="{{imageURL}}" width=50, height=50 /><p>{{name}}</p><button type="button" class="btn btn-primary btn-lg" onclick="on()" style= float:right >See Profile</button><div class="popup" id="overlay" id={{id}}><h4>{{name}}'s Profile</h4>
+                    <img src="{{imageURL}}" width=50, height=50 /><p>{{name}}</p>
+                </div>
+            {{/each}}
+    </div>
+    <div class="flex-container-profile">
+            <div class="jakeprofile">
+            <button type="button" class="btn btn-primary btn-lg" onclick="onjake()" style= float:right >See Profile</button><div class="popup" id="overlay-jake" id='jakeprof'><h4>Jake's Profile</h4>
                 <p>Total Participated Sessions: 41</p>
                 <p> Current Activity </p>
-                <img src='{{graphimage}}'>
+                <img src='/images/jakegraph.png'>
                 <br>
-                <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="off()">Close</a></div>
-            {{/each}}
+                <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="offjake()">Close</a></div>
+            </div>
+            <div class="amyprofile">
+              <button type="button" class="btn btn-primary btn-lg" onclick="onamy()" style= float:right >See Profile</button><div class="popup" id="overlay-amy" id='amyprof'><h4>Amy's Profile</h4>
+                <p>Total Participated Sessions: 22</p>
+                <p> Current Activity </p>
+                <img src='/images/amygraph.png'>
+                <br>
+                <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="offamy()">Close</a></div>
+            </div>
+            <div class="bobprofile">
+              <button type="button" class="btn btn-primary btn-lg" onclick="onbob()" style= float:right >See Profile</button><div class="popup" id="overlay-bob" id='bobprof'>
+                <h4>Bob's Profile</h4>
+                <p>Total Participated Sessions: 37</p>
+                <p> Current Activity </p>
+                <img src='/images/yougraph.png'>
+                <br>
+                <a href='#' button type="button" id=submitbutton class="btn btn-primary btn-lg" onclick="offbob()">Close</a></div>
+            </div>
 
             
     </div>
@@ -82,13 +105,27 @@
     </nav>
 
         <script>
-        function on() {
-            document.getElementById("overlay").style.display = "block";
+        function onjake() {
+            document.getElementById("overlay-jake").style.display = "block";
             }
 
-        function off() {
-            document.getElementById("overlay").style.display = "none";
+        function offjake() {
+            document.getElementById("overlay-jake").style.display = "none";
             }
+        function onamy() {
+            document.getElementById("overlay-amy").style.display = "block";
+            }
+
+        function offamy() {
+            document.getElementById("overlay-amy").style.display = "none";
+            }
+        function onbob() {
+            document.getElementById("overlay-bob").style.display = "block";
+            }
+
+        function offbob() {
+            document.getElementById("overlay-bob").style.display = "none";
+            }    
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
