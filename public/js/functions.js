@@ -39,14 +39,11 @@ function checkTime(e){
 	console.log(timerminute);
 	sessionStorage.setItem("timerHour", timerhour);
 	sessionStorage.setItem("timerMinute", timerminute);
-	if (timerhour === null || timerhour ==="") {
-		alert("Must input hours!");
-		console.log("null hour input");
+	if (timerhour === null || timerhour ==="" || timerminute === null || timerminute ==="") {
+		alert("Must input hours and minutes!");
+		console.log("null hour and minute input");
 	}
-	if (timerminute === null || timerminute ===""){
-		alert("Must input minutes!");
-		console.log("null minute input");
-	}
+
 	else {
 	window.open("/session", "_self");
 	}
