@@ -1,34 +1,24 @@
 'use strict';
 $(document).ready(function() {
-	initializePage();
+	graphs(1);
+	graphs(2);
+	graphs(3);
 })
 
 
-function initializePage() {
-	console.log("Javascript connected!");
-	/*var timerhour =  document.getElementById("myHour").value
-	var timerminute = document.getElementById("myMinute").value
-	console.log(timerhour);
-	*/
-	var timerhour = sessionStorage.getItem("timerHour");
-	var timerminute = sessionStorage.getItem("timerMinute");
-	console.log(timerhour);
-	console.log(timerminute);
-	$('#hourminute').html("0" + timerhour + ":" + timerminute + ":00");
-	countdownTimer();
-}
+const zoom = "Zoom";
+const youtube = "Youtube";
+const discord = "Discord";
+const instagram = "Instagram";
+const gmail = "Gmail";
 
-window.onload = function () {
 
-var zoom = "Zoom";
-var youtube = "Youtube";
-var discord = "Discord";
-var instagram = "Instagram";
-var gmail = "Gmail";
+const graphs = (num) => { 
 
 let applications = ["Zoom", "Youtube", "Discord", "Instagram", "Gmail"];
+let divId = (num == 1 ? "chartContainer1" : num == 2 ? "chartContainer2" : "chartContainer3"); 
 
-var chart = new CanvasJS.Chart("chartContainer", {
+var chart = new CanvasJS.Chart(divId, {
 	animationEnabled: true,
 	theme: "light2", // "light1", "light2", "dark1", "dark2"
 	title:{
@@ -64,11 +54,12 @@ function updateChart() {
 	
 	chart.options.data[0].dataPoints = dps; 
 	chart.render();
+	console.log("graph1", deltaY);
 };
 updateChart();
 
-setInterval(function() {updateChart()}, 1000);
 
+setInterval(function() {updateChart()}, 1000);
 
 
 // function randomInt(max) {
