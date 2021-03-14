@@ -58,28 +58,26 @@
         </div>
     </div>-->
 
-        <div class="onlinefriends">
-        <h3>Current Friends Online</h3>
-            <div class="displayfriends">
-                <div class="flex-container-friends">
+  <div class="onlinefriends">
+    <h3>Current Friends Online</h3>
+    <div class="displayfriends">
+      <div class="flex-container-friends">
             {{#each friends}}   
                     <img src="{{imageURL}}" />                
             {{/each}}
-                </div>
-            </div>
-            <div class = "displaynames">       
-                <div class="flex-container">
-            {{#each friends}}
-              <p>{{name}}</p>
-            {{/each}}
-                </div>
-              </div>
+      </div>
+  </div>
+
+  <div class = "displaynames">       
+    <div class="flex-container">
+      {{#each friends}}
+      <p>{{name}}</p>
+      {{/each}}
+    </div>
+  </div>
 
 
-
-
-    <div class="info">
-    
+  <div class="info">
     <a href = "/secondpage" button type="button" class="btn btn-primary btn-lg">Start a Session</button> </a>
   </div>
 
