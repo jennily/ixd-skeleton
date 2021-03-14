@@ -546,6 +546,21 @@ h5 {
 
 }
 
+.amyprofile img[src='/images/amygraph.png'] {
+	border: solid gray 1px;
+	margin-left: 60px;
+}
+
+.jakeprofile img[src='/images/jakegraph.png'] {
+	border: solid gray 1px;
+	margin-left: 60px;
+}
+
+.bobprofile img[src='/images/yougraph.png'] {
+	border: solid gray 1px;
+	margin-left: 60px;
+}
+
 /* SESSION HISTORY */
 .barplot h5 {
 	font-family: "Space Mono", monospace;
