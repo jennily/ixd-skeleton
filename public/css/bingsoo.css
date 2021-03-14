@@ -81,7 +81,6 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding-left: 5px;
 	gap: 65px;
 }
 
@@ -611,7 +610,7 @@ h5 {
 	margin-left: 60px;
 }
 
-.bobprofile img[src='/images/yougraph.png'] {
+.bobprofile img[src='/images/yourgraph.PNG'] {
 	border: solid gray 1px;
 	margin-left: 60px;
 }
@@ -625,7 +624,7 @@ h5 {
 	text-align: center;
 }
 
-.barplot img[src='/images/yourgraph.png']{
+.barplot img[src='/images/yourgraph.PNG']{
 	width: 300px;
 	height: 220px;
 	text-align: center;
