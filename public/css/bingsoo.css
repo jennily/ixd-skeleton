@@ -211,15 +211,17 @@ h3{
 }
 
 .participants .flex-container p {
-	font-size: 20px;
+	font-size: 25px;
 	margin: auto;
+	font-family: "Darker Grotesque";
 }
 
 .participants .decline  {
 	margin: 20px;
 	color: red;
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
+	font-family: Muli, monospace;
 }
 
 .invite {
@@ -370,7 +372,6 @@ img.sessions {
 
 .participants p {
 	margin-left: 15px;
-	font-family: "Darker Grotesque";
 	font-size: 25px;
 	font-weight: bold;
 }
